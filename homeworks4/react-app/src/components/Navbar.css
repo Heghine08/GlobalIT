@@ -1,0 +1,32 @@
+.navbar {
+  background: linear-gradient(90deg, #1e293b, #0f172a);
+  padding: 18px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  color: white;
+  margin: 0;
+  font-size: 28px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  padding: 10px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  background: #7c3aed;
+  color: white;
+}
