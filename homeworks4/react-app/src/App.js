@@ -5,6 +5,7 @@ import Posts from "./pages/Posts";
 import PostDetail from "./pages/PostDetail";
 import Users from "./pages/Users";
 import UserProfile from "./pages/UserProfile";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/posts/:id" element={<PostDetail />} />
         <Route path="/users" element={<Users />} />
         <Route path="/users/:id" element={<UserProfile />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );

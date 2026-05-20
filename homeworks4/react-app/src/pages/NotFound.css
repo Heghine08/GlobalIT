@@ -1,0 +1,43 @@
+.not-found-container {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f5f9;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.not-found-card {
+  max-width: 500px;
+  width: 100%;
+  background: white;
+  padding: 50px 40px;
+  border-radius: 20px; 
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  animation: slideUp 0.4s ease-out;
+}
+.not-found-code {
+  font-size: 100px;
+  margin: 0;
+  color: #7c3aed; 
+  font-weight: 900;
+  letter-spacing: -5px;
+}
+.not-found-title {
+  font-size: 28px;
+  color: #1e293b;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.not-found-btn {
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.2);
+}
