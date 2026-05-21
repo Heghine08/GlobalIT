@@ -1,0 +1,47 @@
+.div1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    height: 60vh;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.h1 {
+    color: black;
+    font-size: 40px;
+}
+
+.h2 {
+    color: #ee6e26;
+    font-size: 45px;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+}
+
+span {
+    color: #ee6e26;
+    font-weight: bold;
+}
+.button1 {
+    width: 150px;
+    padding: 10px 20px;
+    background: #ee6e26;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.img1 {
+    width: 400px;
+}
