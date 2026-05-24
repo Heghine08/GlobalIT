@@ -1,0 +1,43 @@
+.services-container {
+  padding: 50px;
+  min-height: 100vh;
+  background: #f1f5f9;
+  font-family: Arial, sans-serif;
+}
+.services-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: #ee6e26;
+  font-weight: bold;
+}
+.cards {
+  margin-left: 370px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 70px;
+}
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.card h2 {
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+.card p {
+  color: #ee6e26;
+  font-weight: bold;
+  margin-top: 30px;
+}

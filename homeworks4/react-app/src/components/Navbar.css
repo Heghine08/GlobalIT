@@ -1,18 +1,21 @@
 .navbar {
-  background: linear-gradient(90deg, #1e293b, #0f172a);
+  background: white;
   padding: 18px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-
+.d1{
+  display: flex;
+  align-items: center;
+  gap: 10px;  
+}
 .logo {
-  color: white;
+  color: #ee6e26;
   margin: 0;
   font-size: 28px;
 }
-
 .nav-links {
   display: flex;
   gap: 15px;
@@ -24,9 +27,10 @@
   text-decoration: none;
   font-weight: bold;
   transition: 0.3s;
+  color: black;
 }
 
 .nav-link:hover {
-  background: #7c3aed;
+  background: #ee6e26;
   color: white;
 }
