@@ -1,0 +1,1123 @@
+/* 1. Գլխավոր կոնտեյները, որը կենտրոնացնում է ֆորման էկրանի մեջտեղում */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Էկրանի բարձրության մեծ մասը կվերցնի */
+  background-color: #f4f7f5; /* Բաց, հանգիստ ֆոն */
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+/* 2. Լոգինի ֆորմայի բլոկը */
+.login-form {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px; /* Կլորացված անկյուններ */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); /* Թեթև, պրոֆեսիոնալ ստվեր */
+  width: 100%;
+  max-width: 400px; /* Որ շատ չլայնանա մեծ էկրանների վրա */
+  box-sizing: border-box;
+}
+
+/* Ֆորմայի վերնագիրը */
+.login-form h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* 3. Ինպուտների (input) սիրուն տեսքը */
+.login-form input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease; /* Սահուն անցում, երբ սեղմում ենք ինպուտի վրա */
+  box-sizing: border-box;
+  background-color: #fafafa;
+}
+
+/* Երբ սեղմում ենք ինպուտի մեջ (Focus) */
+.login-form input:focus {
+  border-color: #2e5339; /* Դառնում է քո նշած կանաչ գույնը */
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(46, 83, 57, 0.15); /* Կանաչավուն թեթև շերտ շուրջը */
+  outline: none;
+}
+
+/* 4. «Sign In» կոճակի (button) դիզայնը */
+.login-form .btn-buy {
+  width: 100%;
+  padding: 14px;
+  background-color: #2e5339; /* Մուգ կանաչ */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  margin-top: 5px;
+}
+
+/* Երբ մկնիկը տանում ենք կոճակի վրա (Hover) */
+.login-form .btn-buy:hover {
+  background-color: #233f2b; /* Փոքր-ինչ ավելի մուգ կանաչ */
+}
+
+/* Երբ սեղմում ենք կոճակին (Active click) */
+.login-form .btn-buy:active {
+  transform: scale(0.98); /* Կոճակը մի փոքր կսեղմվի՝ ռեալիստիկ դառնալով */
+}
+
+/* Home Գլխավոր Կոնտեյներ */
+.home-container {
+  font-family: sans-serif;
+  color: #333;
+  background-color: #fafdfb;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  gap: 40px;
+  min-height: 70vh;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 550px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  color: #2e5339; /* Քո սիրած մուգ կանաչը */
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Explore Shop Կոճակը */
+.btn-explore {
+  padding: 14px 28px;
+  background-color: #2e5339;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px; /* Կլորավուն սիրուն կոճակ */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-explore:hover {
+  background-color: #1f3a27;
+  transform: translateY(-2px); /* Թեթև վերև կբարձրանա մկնիկը տանելիս */
+  box-shadow: 0 5px 15px rgba(46, 83, 57, 0.3);
+}
+
+/* Hero Նկարի բաժինը */
+.hero-image-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image-box img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px; /* Կլորացված էլեգանտ անկյուններ */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Առավելությունների բաժին (Advantages) */
+.advantages-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 60px 10%;
+  background-color: #f2f7f4; /* Թեթև կանաչավուն ֆոն */
+}
+
+.advantage-card {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease;
+}
+
+.advantage-card:hover {
+  transform: translateY(-5px);
+}
+
+.adv-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.advantage-card h3 {
+  color: #2e5339;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.advantage-card p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Հարմարեցում հեռախոսների համար (Responsive) */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column-reverse; /* Հեռախոսի վրա նկարը կգնա վերև, տեքստը՝ ներքև */
+    text-align: center;
+    padding: 40px 20px;
+  }
+  .advantages-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+}
+/* NAVBAR-Ի ԳԼԽԱՎՈՐ ՈՃԵՐԸ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 10%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Թեթև ստվեր ներքևից */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Որ միշտ մնա ամենավերևում, երբ էջը scroll անենք */
+}
+
+/* Լոգոյի դիզայնը */
+.navbar-logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2e5339; /* Մեր մուգ կանաչը */
+  text-decoration: none;
+}
+
+.navbar-logo span {
+  color: #5c8d6b; /* Լոգոյի երկրորդ մասի ավելի բաց կանաչը */
+}
+
+/* Մենյուի ցուցակը (Home, Shop, About) */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #555;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  padding: 5px 0;
+  position: relative;
+}
+
+/* Մկնիկը վրան տանելիս (Hover) */
+.navbar-links a:hover {
+  color: #2e5339;
+}
+
+.cart-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.cart-icon-wrapper i {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.cart-count {
+  position: absolute;
+  top: -15px;
+  right: -22px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background-color: #2e5339;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ԱԿՏԻՎ ԷՋԻ ՈՃԸ (Որ էջի վրա որ գտնվում ենք) */
+.navbar-links a.active-link {
+  color: #2e5339;
+  font-weight: bold;
+}
+
+/* Ակտիվ էջի տակից սիրուն գծիկ */
+.navbar-links a.active-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #2e5339;
+  bottom: 0;
+  left: 0;
+}
+
+/* Հարմարեցում հեռախոսների համար */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+  .navbar-links {
+    gap: 15px;
+  }
+  .navbar-links a {
+    font-size: 14px;
+  }
+  .btn-nav-login {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+/* Shop Էջի Գլխավոր Ոճերը */
+.shop-container {
+  padding: 40px 10%;
+  background-color: #fafdfb;
+  font-family: sans-serif;
+}
+
+.shop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.shop-title {
+  font-size: 32px;
+  color: #2e5339;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.shop-subtitle {
+  text-align: left;
+  color: #666;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.btn-admin-shop {
+  padding: 12px 24px;
+  background-color: #2e5339;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-admin-shop:hover {
+  background-color: #1f3a27;
+}
+
+/* CSS GRID՝ Քարտերի դասավորության համար */
+.plants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Ավտոմատ հարմարվող սյունակներ */
+  gap: 30px; /* Քարտերի արանքի հեռավորությունը */
+}
+
+/* Բույսի Քարտը */
+.plant-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden; /* Որ նկարի անկյունները նույնպես կլորանան */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #edf2ee;
+}
+
+.plant-card:hover {
+  transform: translateY(-6px); /* Թեթև վերև է բարձրանում */
+  box-shadow: 0 12px 24px rgba(46, 83, 57, 0.1); /* Կանաչավուն ստվեր */
+}
+
+/* Նկարի բաժինը քարտի մեջ */
+.plant-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-color: #f4f7f5;
+}
+
+.plant-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Որ նկարը չտափակի */
+}
+
+/* «In Cart» պիտակը նկարի վրա */
+.badge-sold {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #5c8d6b;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Ինֆորմացիայի բաժինը քարտի ներքևում */
+.plant-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.plant-info h3 {
+  font-size: 19px;
+  color: #2e5339;
+  margin: 0 0 10px 0;
+}
+
+.plant-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #5c8d6b;
+  margin-bottom: 15px;
+}
+
+/* Գնելու Կոճակը (Add to Cart) */
+.btn-buy-product {
+  width: 100%;
+  padding: 12px;
+  background-color: #2e5339;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-buy-product:hover {
+  background-color: #1f3a27;
+}
+
+/* Quantity controls under each shop card */
+.quantity-controls {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.btn-qty {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #dde6e0;
+  background: white;
+  color: #2e5339;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-qty:hover:not(:disabled) {
+  background: #edf6ef;
+}
+
+.btn-qty:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.quantity-value {
+  min-width: 32px;
+  text-align: center;
+  font-weight: 600;
+  color: #2e5339;
+}
+
+.cart-count-label {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #5c8d6b;
+  font-weight: 600;
+}
+
+/* Երբ բույսն արդեն գնվել է (Bought State) */
+.btn-buy-product.bought {
+  background-color: #e2ede5;
+  color: #5c8d6b;
+  cursor: not-allowed; /* Մկնիկի նշանը կդառնա արգելված */
+}
+
+/* Հեռախոսների համար padding-ի քչացում */
+@media (max-width: 768px) {
+  .shop-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .shop-title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .shop-subtitle {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .btn-admin-shop {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-container {
+    padding: 30px 20px;
+  }
+}
+.cart-container {
+  padding: 40px 10%;
+  font-family: sans-serif;
+  background-color: #fafdfb;
+  min-height: 80vh;
+}
+
+.cart-container h2 {
+  color: #2e5339;
+  margin-bottom: 30px;
+}
+
+.empty-message {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cart-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.cart-items {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Զամբյուղի ապրանքի տողը */
+.cart-item-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border: 1px solid #edf2ee;
+}
+
+.cart-item-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-details h3 {
+  margin: 0 0 5px 0;
+  color: #2e5339;
+}
+
+.cart-item-details .price {
+  margin: 0;
+  color: #5c8d6b;
+  font-weight: bold;
+}
+
+.item-quantity {
+  margin-top: 8px;
+  color: #666;
+  font-size: 14px;
+}
+
+.cart-item-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.cart-item-actions .quantity-controls {
+  gap: 8px;
+}
+
+..cart-count-display {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2e5339;
+}
+
+.balance-display {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f3a27;
+  background: #eef7ed;
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 16px;
+  border: 1px solid #d6e7d4;
+}
+
+.checkout-message {
+  margin-top: 14px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  background: #f2faf4;
+  color: #2e5339;
+  border: 1px solid #d7e8d7;
+}
+
+/* Remove Կոճակը */
+.btn-remove {
+  background: none;
+  border: 1px solid #ff4d4d;
+  color: #ff4d4d;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-remove:hover {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+/* Հաշվի աջ կողմի բլոկը (Summary) */
+.cart-summary {
+  flex: 1;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border: 1px solid #edf2ee;
+}
+
+.cart-summary h3 {
+  margin-top: 0;
+  color: #2e5339;
+  border-bottom: 1px solid #edf2ee;
+  padding-bottom: 15px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  color: #555;
+}
+
+.summary-row.total {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2e5339;
+  border-top: 1px solid #edf2ee;
+  padding-top: 15px;
+}
+
+.btn-checkout {
+  width: 100%;
+  padding: 12px;
+  background-color: #2e5339;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.2s;
+}
+
+.btn-checkout:hover {
+  background-color: #1f3a27;
+}
+
+@media (max-width: 768px) {
+  .cart-content {
+    flex-direction: column;
+  }
+}
+
+.admin-container {
+  padding: 40px 10%;
+  font-family: sans-serif;
+  background-color: #fafdfb;
+  min-height: 80vh;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.admin-container h1 {
+  color: #2e5339;
+  margin-bottom: 10px;
+}
+
+.btn-logout {
+  padding: 12px 24px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-logout:hover {
+  background-color: #ff1a1a;
+}
+
+.admin-subtitle {
+  color: #5c8d6b;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.admin-status,
+.admin-error {
+  background: #eef7ed;
+  color: #1f3a27;
+  border: 1px solid #d6e7d4;
+  padding: 15px 18px;
+  border-radius: 14px;
+  margin-bottom: 24px;
+}
+
+.admin-error {
+  background: #fdecea;
+  color: #8a1f11;
+  border-color: #f5c6cb;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 30px;
+}
+
+.admin-restore-panel {
+  background: #ffffff;
+  border: 1px solid #d6e7d4;
+  border-radius: 16px;
+  padding: 22px;
+  margin-bottom: 24px;
+}
+
+.restore-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.restore-list {
+  display: grid;
+  gap: 12px;
+}
+
+.restore-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #f5fbf6;
+  border: 1px solid #d6e7d4;
+  border-radius: 12px;
+}
+
+.restore-card span {
+  color: #2e5339;
+  font-weight: 600;
+}
+
+
+.admin-restore-panel {
+  background: #ffffff;
+  border: 1px solid #d6e7d4;
+  border-radius: 16px;
+  padding: 22px;
+  margin-bottom: 24px;
+}
+
+.admin-restore-panel h2 {
+  margin: 0 0 16px 0;
+  color: #2e5339;
+  font-size: 20px;
+}
+
+.restore-list {
+  display: grid;
+  gap: 12px;
+}
+
+.restore-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #f5fbf6;
+  border: 1px solid #d6e7d4;
+  border-radius: 12px;
+}
+
+.restore-card span {
+  color: #2e5339;
+  font-weight: 600;
+}
+
+
+.admin-form,
+.admin-table {
+  background: white;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid #edf2ee;
+}
+
+.admin-form h2,
+.admin-table h2 {
+  color: #2e5339;
+  margin-bottom: 18px;
+}
+
+.admin-form label {
+  display: block;
+  margin-bottom: 16px;
+  color: #4f5d4b;
+  font-weight: 600;
+}
+
+.admin-form input,
+.admin-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #dce4dd;
+  border-radius: 12px;
+  margin-top: 8px;
+  background: #f8faf8;
+  color: #333;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.admin-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.admin-form-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.product-list {
+  display: grid;
+  gap: 18px;
+}
+
+.product-card.admin-card {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid #edf2ee;
+}
+
+.product-card.admin-card img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.product-card-body h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  color: #2e5339;
+}
+
+.product-category {
+  margin: 0 6px 8px;
+  color: #5c8d6b;
+  font-size: 13px;
+}
+
+.product-price {
+  margin: 0 0 12px;
+  font-weight: 700;
+  color: #2e5339;
+}
+
+.product-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.admin-chart-panel {
+  background: #ffffff;
+  border: 1px solid #edf2ee;
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.chart-header h2 {
+  margin: 0;
+  color: #2e5339;
+}
+
+.chart-header p {
+  margin: 4px 0 0;
+  color: #5c8d6b;
+  line-height: 1.6;
+}
+
+.chart-list {
+  display: grid;
+  gap: 18px;
+}
+
+.chart-item {
+  display: grid;
+  gap: 10px;
+}
+
+.chart-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #354935;
+  font-weight: 600;
+}
+
+.chart-bar-wrapper {
+  width: 100%;
+  background: #edf5ec;
+  border-radius: 14px;
+  height: 18px;
+  overflow: hidden;
+}
+
+.chart-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #3c7555 0%, #5f9c73 100%);
+  border-radius: 14px;
+  transition: width 0.5s ease;
+}
+
+.chart-empty {
+  margin: 0;
+  color: #5c8d6b;
+  font-size: 15px;
+}
+
+@media (max-width: 900px) {
+  .admin-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* About Էջի Գլխավոր Ոճերը */
+.about-container {
+  padding: 60px 10%;
+  background-color: #fafdfb;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-header h2 {
+  font-size: 36px;
+  color: #2e5339; /* Մեր մուգ կանաչը */
+  margin-bottom: 10px;
+}
+
+.about-subtitle {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Պատմության բլոկի դասավորությունը (Flexbox) */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h3 {
+  font-size: 26px;
+  color: #2e5339;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Արժեքների բաժին (Values) */
+.values-section {
+  border-top: 1px solid #e8eee9;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.values-title {
+  font-size: 26px;
+  color: #2e5339;
+  margin-bottom: 35px;
+}
+
+.values-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.value-box {
+  flex: 1;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  border: 1px solid #edf2ee;
+  text-align: left;
+}
+
+.value-box h4 {
+  font-size: 18px;
+  color: #2e5339;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.value-box p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Հարմարեցում հեռախոսների համար (Responsive) */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Հեռախոսի վրա նկարն ու տեքստը կգան իրար տակ */
+    gap: 30px;
+  }
+  .values-grid {
+    flex-direction: column;
+  }
+  .about-container {
+    padding: 40px 20px;
+  }
+}
